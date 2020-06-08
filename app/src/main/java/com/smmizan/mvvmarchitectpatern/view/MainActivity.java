@@ -7,6 +7,7 @@ import android.os.Bundle;
 import com.smmizan.mvvmarchitectpatern.R;
 
 public class MainActivity extends AppCompatActivity {
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
