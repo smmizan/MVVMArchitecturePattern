@@ -1,6 +1,7 @@
 package com.smmizan.mvvmarchitectpatern.view;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
@@ -40,9 +41,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String result = mainActivityViewModel.calculateValue(etValue1.getText().toString(),etValue2.getText().toString());
-
-                Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
+                mainActivityViewModel.calculateValue(etValue1.getText().toString(),etValue2.getText().toString()).observe(MainActivity.this, new Observer<String>() {
+                    @Override
+                    public void onChanged(String s) {
+                        Toast.makeText(MainActivity.this, s, Toast.LENGTH_SHORT).show();
+                    }
+                });
 
             }
         });
