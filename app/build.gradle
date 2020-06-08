@@ -26,6 +26,8 @@ dependencies {
     // LiveData
     implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
 
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+
     // Annotation processor
     annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
 
