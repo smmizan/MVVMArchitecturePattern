@@ -1,8 +1,10 @@
-package com.smmizan.mvvmarchitectpatern;
+package com.smmizan.mvvmarchitectpatern.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.smmizan.mvvmarchitectpatern.R;
 
 public class MainActivity extends AppCompatActivity {
 
